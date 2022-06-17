@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main2.css" rel="stylesheet">
+    <link href="css/cal.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/fav.png" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css"> -->
+    <!--<title>Admin Dashboard Panel</title>--> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="img/fav.png" alt="logo">
+            </div>
+
+            <span class="logo_name">Objectways</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="dashboard.html" id="dash-cont">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="report.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Report</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Attendance</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Help</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Comment</span>
+                </a></li>
+                <!-- <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li> -->
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="logout.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+             <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div> 
+        <div class="user-setting">
+            <img src="img/fav.png" class="user-img" alt="">
+            <div class="user-name">user-name</div> 
+        </div></div>
+
+        <div class="dash-content" id="dash-cont">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+                
+                <div class="row d-flex justify-content-evenly bd-highlight " >
+                    <div class="col-sm-4 col-md-4 col-lg-5 col-xl-5 col-xxl-7  ">
+                      <div class="card">
+                        <div class="center">
+                            <div class="greeting"></div>
+                            <div class="card clock ">
+                              <div class="time"></div>
+                              <i class="fa-solid fa-clock "></i>
+                            </div></div>
+                       <div> <p class="card-text"> Here whats happing in your</br> account today</p>
+                        <button class="whats-new"  type="submit">Whats New!</button>
+                         <img src="img/cartoon.png" class="img1" alt=""> 
+                        </div></div>
+                      </div>
+                      <div class="col-sm-8 col-md-4 col-lg-5 col-xl-5 col-xxl-5">
+                        <div class="card-body">
+                              <div id="body">
+                                <div id="wrap">
+                                </div> 
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+                    <!-- <div class="title">
+                        <i class="uil uil-tachometer-fast-alt"></i>
+                        <span class="text">Dashboard</span>
+                    </div>
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Total </span>
+                        <span class="number">50,120</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-comments"></i>
+                        <span class="text">Active </span>
+                        <span class="number">20,120</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Total minutes</span>
+                        <span class="number">10,120</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="main ">
+                  <form class="form-inline ">
+                    <div class="form-group">
+                      <label for="files">Upload a CSV formatted file:</label>
+                      <input class="form-control" id="files" required="" type="file" accept=".csv">
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+                    </div>
+                  </form>
+                  <div id="app"></div>
+                </div>
+              </div> -->
+           
+            
+    </section>
+
+    <script src="/js/dark.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/d45a5731a6.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="/js/greeting.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/aa95071b26.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    
+    
+    <script>
+        
+$.fn.dropify = function () {
+    $(this).hide();
+    $(this).after(
+      '<div data-id="' +
+        $(this).attr("id") +
+        '" class="list-wrapper" index="0"><span class="selcted-value">' +
+        $(this).children("option:selected").text() +
+        '</span><ul style="display:none;"></ul></div>'
+    );
+    $(this)
+      .children("option")
+      .each(function () {
+        $(this)
+          .parent("")
+          .next(".list-wrapper")
+          .find("ul")
+          .append("<li>" + $(this).text() + "</li>");
+      });
+  };
+  var stuff = new Date();
+  var day = stuff.getDay();
+  var date = stuff.getDate();
+  var month = stuff.getMonth();
+  var year = stuff.getFullYear();
+  var month_name = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  var nod = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  var day_name = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednessday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  var tempday = ((day - (date % 7) + 7) % 7) + 1;
+  var nosd;
+  $.fn.calandarinit = function () {
+    var cal_html =
+      '<div class="info"><h2 id="clear">Today <i class="fa fa-external-link-square" aria-hidden="true"></i></h2></div><div class="in-wrap"><div class="head-wrap"> <button class="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> </button> <h4 class="year-month text-center"><select name="month" id="month" placeholder="month"> <option value="01">January</option> <option value="02">February</option> <option value="03">March</option> <option value="04">April</option> <option value="05">May</option> <option value="06">June</option> <option value="07">July</option> <option value="08">August</option> <option value="09">September</option> <option value="10">October</option> <option value="11">November</option> <option value="12">December</option> </select> <select id="year"></select></h4> <button class="next"> <i class="fa fa-angle-right" aria-hidden="true"></i> </button> </div><div class="bd-wrap"><div class="days"><div class="day">Sun</div><div class="day">Mon</div><div class="day">Tue</div><div class="day">Wed</div><div class="day">Thu</div><div class="day">Fri</div><div class="day">Sat</div></div><div class="day-blocks"> </div></div></div>';
+    $(this).empty();
+    $(this).append(cal_html);
+    $(this)
+      .find("#month")
+      .children("option:nth(" + month + ")")
+      .attr("selected", true);
+    $(this).find(".year").text(year);
+    $(".info").append(
+      "<h1>" + stuff.getDate() + "</h1><h3>" + day_name[stuff.getDay()] + "</h3>"
+    );
+    if (month == 1 && year % 4 == 0) {
+      nosd = 29;
+    } else {
+      nosd = nod[month];
+    }
+    for (var j = 0; j < tempday; j++) {
+      $(this).find(".day-blocks").append('<div class="day"><span></span></div>');
+    }
+    for (var i = 1; i <= nosd; i++) {
+      if (i != date) {
+        $(this)
+          .find(".day-blocks")
+          .append('<div class="day-' + i + '"><span>' + i + "</span></div>");
+      } else {
+        $(this)
+          .find(".day-blocks")
+          .append(
+            '<div class="day-' + i + ' active"><span>' + i + "</span></div>"
+          );
+      }
+    }
+    for (var y = 0; y <= 150; y++) {
+      var yval = year - 50 + y;
+      if (yval != year) {
+        $("#year").append('<option value="' + yval + '">' + yval + "</option>");
+      } else {
+        $("#year").append(
+          '<option selected="selected" value="' + yval + '">' + yval + "</option>"
+        );
+      }
+    }
+    $("#month").dropify();
+    $("#year").dropify();
+  
+    $(".day-blocks > div").each(function () {
+      $(this).height($(this).width());
+    });
+  };
+  $.fn.goprev = function () {
+    if (month == 0) {
+      month = 11;
+      year = year - 1;
+    } else {
+      month = month - 1;
+    }
+    if (month == 1 && year % 4 == 0) {
+      nosd = 29;
+    } else {
+      nosd = nod[month];
+    }
+    tempday = ((tempday - ((nosd + 1) % 7) + 7) % 7) + 1;
+    $("#wrap").calandarinit();
+  };
+  $.fn.gonext = function () {
+    tempday = (((tempday + nosd + 1) % 7) - 1 + 7) % 7;
+    if (month == 11) {
+      month = 0;
+      year = year + 1;
+    } else {
+      month = month + 1;
+    }
+    if (month == 1 && year % 4 == 0) {
+      nosd = 29;
+    } else {
+      nosd = nod[month];
+    }
+    $("#wrap").calandarinit();
+  };
+  $.fn.goto = function () {
+    var gdate = $(".active").find("span").text();
+    var gmonth = $("#month").val();
+    var gyear = $("#year").val();
+    var godate = gmonth + "/" + gdate + "/" + gyear;
+    var nstuff = new Date(godate);
+    day = nstuff.getDay();
+    date = nstuff.getDate();
+    month = nstuff.getMonth();
+    year = nstuff.getFullYear();
+    tempday = ((day - (date % 7) + 7) % 7) + 1;
+    if (month == 1 && year % 4 == 0) {
+      nosd = 29;
+    } else {
+      nosd = nod[month];
+    }
+    $("#wrap").calandarinit();
+  };
+  $.fn.resetact = function () {
+    day = stuff.getDay();
+    date = stuff.getDate();
+    month = stuff.getMonth();
+    year = stuff.getFullYear();
+    tempday = ((day - (date % 7) + 7) % 7) + 1;
+    if (month == 1 && year % 4 == 0) {
+      nosd = 29;
+    } else {
+      nosd = nod[month];
+    }
+    $("#wrap").calandarinit();
+  };
+  
+  $(document).on("click", ".head-wrap button", function () {
+    if ($(this).hasClass("prev")) {
+      $("#wrap").goprev();
+    } else {
+      $("#wrap").gonext();
+    }
+  });
+  
+  $(document).on("change", "#month, #year", function () {
+    $("#wrap").goto();
+  });
+  
+  $(document).on("click", ".day-blocks > div", function () {
+    if ($(this).find("span").text() != "") {
+      $(this).addClass("active").siblings().removeClass("active");
+    }
+  });
+  $(document).on("click", "#clear", function () {
+    $("#wrap").resetact();
+  });
+  
+  $(document).on("click", ".list-wrapper span", function () {
+    $(this).toggleClass("opened").siblings("ul").toggle();
+  });
+  $(document).on("click", ".list-wrapper ul li", function () {
+    $(this).parent("ul").siblings("span").text($(this).text());
+    $(this)
+      .parents(".list-wrapper")
+      .prev()
+      .children("option:nth(" + $(this).index() + ")")
+      .attr("selected", true)
+      .siblings()
+      .attr("selected", false)
+      .trigger("change");
+    $(this).parent("ul").hide();
+  });
+  
+  $(window).resize(function () {
+    $(".day-blocks > div").each(function () {
+      $(this).height($(this).width());
+    });
+  });
+  
+  $("#wrap").calandarinit();
+  
+    </script>
+    <!-- greeting -->
+    <script>
+    function add() {
+  var todoItem = $("input").val();
+  if (todoItem == "") {
+    return;
+  }
+  $("<li>", {
+    text: todoItem
+  }).appendTo("ol");
+
+  $("input").val("");
+  var listContents = [];
+  $("ol").each(function () {
+    listContents.push(this.innerHTML);
+  });
+  localStorage.setItem("todoList", JSON.stringify(listContents));
+}
+
+function correctFormat(ob) {
+  if (ob < 10) {
+    ob = "0" + ob;
+  }
+  return ob;
+}
+
+$(function () {
+  //time
+  var hr12Format = true;
+  var period;
+  var time;
+  var greeting;
+
+  $(".time").dblclick(function () {
+    hr12Format = !hr12Format;
+  });
+
+  setInterval(function () {
+    var dateObject = new Date();
+    var sec = correctFormat(dateObject.getSeconds());
+    var min = correctFormat(dateObject.getMinutes());
+    var hrs = correctFormat(dateObject.getHours());
+
+    if (hr12Format) {
+      if (hrs > 12) {
+        hrs -= 12;
+        period = "PM";
+        greeting = "good afternoon!";
+      } else {
+        period = "AM";
+        greeting = "good morning!";
+      }
+      time = hrs + ":" + min + " " + period;
+    } else {
+      time = hrs + ":" + min ;
+    }
+
+    $(".time").text(time);
+    $(".greeting").text(greeting);
+  }, 100);
+
+  $("ol").sortable();
+  $("input").on("keyup", function (evt) {
+    if (evt.which == 13) {
+      add();
+    }
+  });
+  $("button").on("click", add);
+
+  $(document).on("dblclick", "li", function () {
+    $(this).remove();
+    var listContents = [];
+    $("ol").each(function () {
+      listContents.push(this.innerHTML);
+    });
+    localStorage.setItem("todoList", JSON.stringify(listContents));
+  });
+});
+
+  </script>    
+</body>
+</html>
+
