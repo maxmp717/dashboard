@@ -65,7 +65,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover{
     /* background: #3A3B3C; */
     background: black;
 }
-
+/* nav bar start */
 nav{
     position: fixed;
     top: 0;
@@ -131,10 +131,13 @@ nav .menu-items{
     width: 5px;
     border-radius: 50%;
     background-color: var(--primary-color);
-}
+} 
+/* nav bar end */
+
 body.dark li a:hover:before{
     background-color: var(--text-color);
 }
+/* nav bar start */
 .menu-items li a i{
     font-size: 24px;
     min-width: 45px;
@@ -158,10 +161,12 @@ nav.close li a .link-name{
 .nav-links li a:hover .link-name{
     color: var(--primary-color);
 }
+/* nav bar end */
 body.dark .nav-links li a:hover i,
 body.dark .nav-links li a:hover .link-name{
     color: var(--text-color);
 }
+/* nav bar start */
 .menu-items .logout-mode{
     padding-top: 10px;
     border-top: 1px solid var(--border-color);
@@ -204,7 +209,7 @@ body.dark .nav-links li a:hover .link-name{
 body.dark .switch:before{
     left: 20px;
 }
-
+/* nav bar end */
 .dashboard{
     position: relative;
     left: 250px;
@@ -214,10 +219,12 @@ body.dark .switch:before{
     padding: 10px 14px;
     transition: var(--tran-05);
 }
+/* nav bar start */
 nav.close ~ .dashboard{
     left: 73px;
     width: calc(100% - 73px);
 }
+/* nav bar end */
 .dashboard .top{
     position: fixed;
     top: 0;
@@ -405,7 +412,8 @@ nav.close ~ .dashboard .top{
     .activity .activity-data{
         overflow-X: scroll;
     }
-}
+}  
+/* navbar end */
 
 @media (max-width: 780px) {
     .dash-content .boxes .box{
@@ -461,16 +469,16 @@ nav.close ~ .dashboard .top{
 .main{
     padding-top: 100px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-right: -15px;
 }
-.form-control{
+/* .form-control{
      margin-left: 15px; 
 }
 .btn-primary{
     margin-left: 15px;
-}
+} */
 .user-setting{
     display: flex;
     align-items: center;
@@ -636,3 +644,6 @@ nav.close ~ .dashboard .top{
     font-size: 16px;
   }
 } 
+ul{
+    padding-left: 0px!important;
+}
